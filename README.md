@@ -1,4 +1,4 @@
-# Machine-Learing-Project
+# Proposal
 # Introduction
 
 ....
