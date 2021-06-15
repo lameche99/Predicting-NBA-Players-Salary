@@ -1,6 +1,15 @@
 # Machine-Learing-Project
-##Introduction
-.....
+# Introduction
+
+....
 
 
-##Problem Definition
+# Problem Definition
+
+....
+
+# Methods
+
+....
+
+# Potential Results and Discussion
