@@ -1,6 +1,6 @@
 # Proposal
 # Introduction
-
+The National Basketball Association is known to be one of the most lucrative professional sports in the world. The NBA athletes’ salary has increased over the years and the athletes’ contracts has been a topic of interest among many sports fans. There is a sea of data available about the NBA player’s ranking, scores, positions, and their contracts. The intriguing question is what factors and stats play the most important part in the decision of an NBA player’s salary. Our team has decided to attempt to answer this question through this project.
 ....
 
 
