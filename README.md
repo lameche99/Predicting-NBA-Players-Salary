@@ -32,6 +32,14 @@ For this project, we expect to have a machine learning algorithm that is able to
    #drop features that are less correlated(<0.5)
    stats.drop(['G', 'TRB', 'STL', 'BLK'], axis=1, inplace=True)
    pos_corr
+   
+   GS        0.55
+   MP        0.61
+   AST       0.64
+   TOV       0.62
+   PTS       0.70
+   Salary    1.00
+   Name: Salary, dtype: float64
    ```
 
 # References
