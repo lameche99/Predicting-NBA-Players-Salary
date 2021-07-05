@@ -26,24 +26,6 @@ For this project, we expect to have a machine learning algorithm that is able to
    
    ![Pearson Correlation Table](https://github.com/lameche99/Predicting-NBA-Players-Salary/blob/main/images/Pearson_Correlation.png)
    
-   
-   From here we took into consideration only such statistics that were highly correlated to Salaries (_correlation > 0.5_):
-   ```python
-   #identify features that are highly correlated (0.5>)
-   salary_corr = abs(corr["Salary"])
-   pos_corr = salary_corr[salary_corr > (0.5)]
-   #drop features that are less correlated(<0.5)
-   stats.drop(['G', 'TRB', 'STL', 'BLK'], axis=1, inplace=True)
-   pos_corr
-   
-   GS        0.55
-   MP        0.61
-   AST       0.64
-   TOV       0.62
-   PTS       0.70
-   Salary    1.00
-   Name: Salary, dtype: float64
-   ```
 
 # References
 Papadaki, Ioanna, and Michail Tsagris. “Estimating NBA Players Salary Share According to Their Performance on Court: A Machine Learning Approach.” ArXiv.org, 31 Oct. 2020.
