@@ -22,7 +22,7 @@ For this project, we expect to have a machine learning algorithm that is able to
 
 1. Data Pre-Processing
 
-   After scraping the data we decided to look into the statistics for the past 5 seasons of the NBA disregarding players who   signed a rookie contract within this time frame. In order to select the most relevant statistics we decided to run a Pearson Correlation done through the following table:
+   After scraping the data we decided to look into the statistics for the past 5 seasons of the NBA disregarding players who signed a rookie contract within this time frame. In order to select the most relevant statistics we decided to run a Pearson Correlation done through the following table:
    
    ![Pearson Correlation Table](https://github.com/lameche99/Predicting-NBA-Players-Salary/blob/main/images/Pearson_Correlation.png)
    
