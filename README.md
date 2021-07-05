@@ -23,7 +23,16 @@ For this project, we expect to have a machine learning algorithm that is able to
 1. Data Pre-Processing
 
    After scraping the data we decided to look into the statistics for the past 5 seasons of the NBA disregarding players who   signed a rookie contract within this time frame. In order to select the most relevant statistics we decided to run a Pearson Correlation done through the following table:
-   
+   ![Pearson Correlation Table](https://github.com/lameche99/Predicting-NBA-Players-Salary/blob/main/images/Pearson_Correlation.png)
+   From here we took into consideration only such statistics that were highly correlated to Salaries (_correlation > 0.5_):
+   ```python
+   #identify features that are highly correlated (0.5>)
+   salary_corr = abs(corr["Salary"])
+   pos_corr = salary_corr[salary_corr > (0.5)]
+   #drop features that are less correlated(<0.5)
+   stats.drop(['G', 'TRB', 'STL', 'BLK'], axis=1, inplace=True)
+   pos_corr
+   ```
 
 # References
 Papadaki, Ioanna, and Michail Tsagris. “Estimating NBA Players Salary Share According to Their Performance on Court: A Machine Learning Approach.” ArXiv.org, 31 Oct. 2020.
