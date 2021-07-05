@@ -17,8 +17,13 @@ In this project we will use players’ data and stats from the past 5 seasons - 
 We will be scraping data from basketball-reference.com which a historical and up to date repository for statistics for the NBA. To constrain the data set, we will only be considering signed, non-rookie contracts over the past 5 years for salary prediction. For cleaning data, we will consider each players average across the following statistics: Points Per Game(PPG), Minutes Played Per Game (MPG), Rebounds Per Game (RPG), Assists Per Game(APG), Blocks (BLK), Steals (STL), Turnovers(TOVR) mapping each to the player’s salary. Our team will be using a linear regression model to identify the stat correlations that are most correlated to salary prediction and use those stats to predict future contract offers. We will then perform analysis using K-Nearest Neighbors to classify the players which are underpaid yet statistically over performing or vice versa.
 
 
-# Potential Results and Discussion
+# Results and Discussion
 For this project, we expect to have a machine learning algorithm that is able to predict what an NBA player’s salary should be as a percentage of the overall salary cap. This predictor could be used a way for general managers to find the best way to optimize their team with respect to getting the most talent, skill, and highest chance to win with the least amount of money spent. In a league like the NBA where there is a salary cap, it is very important to be efficient with the salaries so that you have more resources on the court than your opponent.
+
+1. Data Pre-Processing
+
+   After scraping the data we decided to look into the statistics for the past 5 seasons of the NBA disregarding players who   signed a rookie contract within this time frame. In order to select the most relevant statistics we decided to run a Pearson Correlation done through the following table:
+   
 
 # References
 Papadaki, Ioanna, and Michail Tsagris. “Estimating NBA Players Salary Share According to Their Performance on Court: A Machine Learning Approach.” ArXiv.org, 31 Oct. 2020.
