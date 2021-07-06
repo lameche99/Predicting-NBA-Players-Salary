@@ -24,7 +24,7 @@ For this project, we expect to have a machine learning algorithm that is able to
 
    After scraping the data we decided to look into the statistics for the past 5 seasons of the NBA disregarding players who signed a rookie contract within this time frame. In order to select the most relevant statistics we decided to run a Pearson Correlation done through the following table:
    
-   ![Pearson Correlation Table](images/Pearson_Correlation.png)
+   ![Pearson Correlation Table](/images/Pearson_Correlation.png)
    
    We then took into consideration solely the statistics that had a high correlation with salaries _(correlation > 0.5)_ as follows:
    ```python
