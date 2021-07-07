@@ -43,7 +43,8 @@ For this project, we expect to have a machine learning algorithm that is able to
    Salary    1.00
    Name: Salary, dtype: float64
    ```
-   Based on the above data, we created training(80%) and test(20%) data set. After that, we made linear regression Model and          calculated predictins on the data. R squared value was used to interpret regression model fitting the observed data. With the      r-squared of \SI{59.69}{\percent} ≈ 60% we can conclude that about 60% of the data fit the regression model.
+   Based on the above data, we created training(80%) and test(20%) data set. Then we made linear regression Model and calculated predictins on the data. R squared value was 
+   used to interpret regression model fitting the observed data. With the r-squared of \SI{59.69}{\percent} ≈ 60% we can conclude that about 60% of the data fit the regression      model.
 
    ```python
    #Linear Regression to Predict Salary
