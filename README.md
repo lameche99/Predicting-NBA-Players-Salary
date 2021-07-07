@@ -26,16 +26,16 @@ For this project, we expect to have a machine learning algorithm that is able to
    
    ![Pearson Correlation Table](./images/Pearson_Correlation.png)
    
-   We then took into consideration solely the statistics that had a high correlation with salaries _(correlation > 0.5)_ as follows:
+   We then took into consideration solely the statistics that had a high correlation with salaries _(correlation > 0.6)_ as follows:
    ```python
-   #identify features that are highly correlated (0.5>)
+
+
+   #identify features that are highly correlated (0.6 >)
    salary_corr = abs(corr["Salary"])
-   pos_corr = salary_corr[salary_corr > (0.5)]
-   #drop features that are less correlated(<0.5)
-   stats.drop(['G', 'TRB', 'STL', 'BLK'], axis=1, inplace=True)
+   pos_corr = salary_corr[salary_corr > (0.6)]
+   #drop features that are less correlated(<0.6)
+   stats.drop(['GS','G','TRB','STL', 'BLK'], axis=1, inplace=True)
    pos_corr
-   
-   GS        0.55
    MP        0.61
    AST       0.64
    TOV       0.62
@@ -43,8 +43,21 @@ For this project, we expect to have a machine learning algorithm that is able to
    Salary    1.00
    Name: Salary, dtype: float64
    ```
-   
+   Based on the above data, we created training(80%) and test(20%) data set. After that, we made linear regression Model and          calculated predictins on the data. R squared value was used to interpret regression model fitting the observed data. With the      r-squared of \SI{59.69}{\percent} ≈ 60% we can conclude that about 60% of the data fit the regression model.
 
+   ```python
+   #Linear Regression to Predict Salary
+   reg = LinearRegression()
+   reg.fit(x_train, y_train)
+   y_prediction = reg.predict(x_test) 
+   r2_score(y_test, y_prediction)
+   0.5969246358948748
+   ```
+   To visualise the predicted results, we created a scatter plot for actual vs predicted values. The following plot shows that the    values have positive correlation: 
+   
+   ![](./images/Scatter_Plot.png)
+   
+   
 # References
 Papadaki, Ioanna, and Michail Tsagris. “Estimating NBA Players Salary Share According to Their Performance on Court: A Machine Learning Approach.” ArXiv.org, 31 Oct. 2020.
 
