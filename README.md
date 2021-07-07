@@ -26,19 +26,20 @@ For this project, we expect to have a machine learning algorithm that is able to
 1. Data Pre-Processing
 
    After scraping the data we decided to look into the statistics for the 2021 season of the NBA disregarding players who signed a rookie contract within this time frame. In order to select the most relevant statistics we decided to run a Pearson Correlation done through the following tables:
-   2016-17
    
+   <h3>2016-17</h3>
+
    <img src="./images/2016-17Correlation.png" width="300">
-   2017-18
+   <h3>2017-18</h3>
 
    <img src="./images/2017-18Correlation.png" width="300">
-   2018-19
+   <h3>2017-18</h3>
 
    <img src="./images/2018-19Correlation.png" width="300">
-   2019-20
+   <h3>2018-19</h3>
 
    <img src="./images/2019-20Correlation.png" width="300">
-   2019-20
+   <h3>2019-20</h3>
 
    <img src="./images/Pearson_Correlation.png.png" width="300">
    ![Pearson Correlation Table](./images/Pearson_Correlation.png)
