@@ -15,8 +15,10 @@ In this project we will use players’ data and stats from the past 5 seasons - 
 
 # Methods
 
-We have scraped data from basketball-reference.com which a historical and up to date repository for statistics for the NBA. To constrain the data set, we will only be considering signed, non-rookie contracts over the past 5 years for salary prediction. For cleaning data, we will consider each players average across the following statistics: Points Per Game(PPG), Minutes Played Per Game (MPG), Rebounds Per Game (RPG), Assists Per Game(APG), Blocks (BLK), Steals (STL), Turnovers(TOVR) mapping each to the player’s salary. Our team will be using a linear regression model to identify the stat correlations that are most correlated to salary prediction and use those stats to predict future contract offers. We will then perform analysis using K-Nearest Neighbors to classify the players which are underpaid yet statistically over performing or vice versa.
+We scraped data from basketball-reference.com which a historical and up to date repository for statistics for the NBA. To constrain the data set, we will only be considering signed, non-rookie contracts over the past 5 years for salary prediction. For cleaning data, we will consider each players average across the following statistics: Points Per Game(PPG), Minutes Played Per Game (MPG), Rebounds Per Game (RPG), Assists Per Game(APG), Blocks (BLK), Steals (STL), Turnovers(TOVR) mapping each to the player’s salary. We are using a linear regression model for the current 2020-21 season to identify the stat correlations that are most correlated to salary prediction and are using those stats to predict future contract offers. We are next using the average of all seasons to standardize over the 5 years for the found data and will perform the same linear predictive analysis along with using K-Nearest Neighbors to classify the players which are underpaid yet statistically over performing or vice versa.
 
+# Data Cleaning
+We cleaned the retrieved data in removing players from the data set with missing stat information or not having salary information. Additionally, we removed any players with names containing special characters not conforming to alphanumeric UTF-8 characters.
 
 # Results and Discussion
 For this project, we expect to have a machine learning algorithm that is able to predict what an NBA player’s salary should be as a percentage of the overall salary cap. This predictor could be used a way for general managers to find the best way to optimize their team with respect to getting the most talent, skill, and highest chance to win with the least amount of money spent. In a league like the NBA where there is a salary cap, it is very important to be efficient with the salaries so that you have more resources on the court than your opponent.
@@ -24,16 +26,16 @@ For this project, we expect to have a machine learning algorithm that is able to
 1. Data Pre-Processing
 
    After scraping the data we decided to look into the statistics for the 2021 season of the NBA disregarding players who signed a rookie contract within this time frame. In order to select the most relevant statistics we decided to run a Pearson Correlation done through the following table:
-   #2016-17
-   <img src="./images/2016-17Correlation.png" width="400">
-   #2017-18
-   <img src="./images/2017-18Correlation.png" width="400">
-   #2018-19
-   <img src="./images/2018-19Correlation.png" width="400">
-   #2019-20
-   <img src="./images/2019-20Correlation.png" width="400">
-   #2019-20
-   <img src="./images/Pearson_Correlation.png.png" width="400">
+   ## 2016-17
+   <img src="./images/2016-17Correlation.png" width="300">
+   ## 2017-18
+   <img src="./images/2017-18Correlation.png" width="300">
+   ## 2018-19
+   <img src="./images/2018-19Correlation.png" width="300">
+   ## 2019-20
+   <img src="./images/2019-20Correlation.png" width="300">
+   ## 2019-20
+   <img src="./images/Pearson_Correlation.png.png" width="300">
    ![Pearson Correlation Table](./images/Pearson_Correlation.png)
    
    We then took into consideration solely the statistics that had a high correlation with salaries _(correlation > 0.6)_ as follows:
