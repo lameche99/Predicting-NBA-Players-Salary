@@ -55,7 +55,7 @@ For this project, we expect to have a machine learning algorithm that is able to
    ```
    To visualise the predicted results, we created a scatter plot for actual vs predicted values. The following plot shows that the    values have positive correlation: 
    
-   ![](./images/Scatter_Plot.png)
+   ![Scatter Plot](./images/Scatter_Plot.png)
    
    
 # References
