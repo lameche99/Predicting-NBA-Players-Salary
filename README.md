@@ -14,7 +14,8 @@ The salary cap and the luxury tax in the NBA will reach $113 and $136 million re
 In this project we will use players’ data and stats from the past 5 seasons - as salaries have dramatically risen compared to earlier years - to find which ones are most correlated to salary and then predict the potential cap hit for the 2021-2022 season. The goal of this project is to provide reasonable recommendations to both players and teams regarding their intrinsic value based on their on-court performance.
 
 # Methods
-We will be scraping data from basketball-reference.com which a historical and up to date repository for statistics for the NBA. To constrain the data set, we will only be considering signed, non-rookie contracts over the past 5 years for salary prediction. For cleaning data, we will consider each players average across the following statistics: Points Per Game(PPG), Minutes Played Per Game (MPG), Rebounds Per Game (RPG), Assists Per Game(APG), Blocks (BLK), Steals (STL), Turnovers(TOVR) mapping each to the player’s salary. Our team will be using a linear regression model to identify the stat correlations that are most correlated to salary prediction and use those stats to predict future contract offers. We will then perform analysis using K-Nearest Neighbors to classify the players which are underpaid yet statistically over performing or vice versa.
+
+We have scraped data from basketball-reference.com which a historical and up to date repository for statistics for the NBA. To constrain the data set, we will only be considering signed, non-rookie contracts over the past 5 years for salary prediction. For cleaning data, we will consider each players average across the following statistics: Points Per Game(PPG), Minutes Played Per Game (MPG), Rebounds Per Game (RPG), Assists Per Game(APG), Blocks (BLK), Steals (STL), Turnovers(TOVR) mapping each to the player’s salary. Our team will be using a linear regression model to identify the stat correlations that are most correlated to salary prediction and use those stats to predict future contract offers. We will then perform analysis using K-Nearest Neighbors to classify the players which are underpaid yet statistically over performing or vice versa.
 
 
 # Results and Discussion
@@ -22,8 +23,17 @@ For this project, we expect to have a machine learning algorithm that is able to
 
 1. Data Pre-Processing
 
-   After scraping the data we decided to look into the statistics for the past 5 seasons of the NBA disregarding players who signed a rookie contract within this time frame. In order to select the most relevant statistics we decided to run a Pearson Correlation done through the following table:
-   
+   After scraping the data we decided to look into the statistics for the 2021 season of the NBA disregarding players who signed a rookie contract within this time frame. In order to select the most relevant statistics we decided to run a Pearson Correlation done through the following table:
+   #2016-17
+   <img src="./images/2016-17Correlation.png" width="400">
+   #2017-18
+   <img src="./images/2017-18Correlation.png" width="400">
+   #2018-19
+   <img src="./images/2018-19Correlation.png" width="400">
+   #2019-20
+   <img src="./images/2019-20Correlation.png" width="400">
+   #2019-20
+   <img src="./images/Pearson_Correlation.png.png" width="400">
    ![Pearson Correlation Table](./images/Pearson_Correlation.png)
    
    We then took into consideration solely the statistics that had a high correlation with salaries _(correlation > 0.6)_ as follows:
@@ -43,7 +53,7 @@ For this project, we expect to have a machine learning algorithm that is able to
    Salary    1.00
    Name: Salary, dtype: float64
    ```
-   Based on the above data, we created training(80%) and test(20%) data set. Then we made linear regression Model and calculated predictins on the data. R squared value was 
+   Based on the above data, we created training(80%) and test(20%) data set. Then we made linear regression Model and calculated predictions on the data. R squared value was 
    used to interpret regression model fitting the observed data. With the r-squared of 59.69 ≈ 60% we can concluded that about 60% of the data fit the regression model.
 
    ```python
