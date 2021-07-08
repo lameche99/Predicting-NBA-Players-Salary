@@ -33,16 +33,16 @@ For this project, we expect to have a machine learning algorithm that is able to
    <h3>2017-18</h3>
 
    <img src="./images/2017-18Correlation.png" width="300">
-   <h3>2017-18</h3>
-
-   <img src="./images/2018-19Correlation.png" width="300">
    <h3>2018-19</h3>
 
-   <img src="./images/2019-20Correlation.png" width="300">
+   <img src="./images/2018-19Correlation.png" width="300">
    <h3>2019-20</h3>
 
+   <img src="./images/2019-20Correlation.png" width="300">
+   <h3>2020-21</h3>
+
    <img src="./images/Pearson_Correlation.png.png" width="300">
-   ![Pearson Correlation Table](./images/Pearson_Correlation.png)
+   <h3>2020-21</h3>
    
    We then took into consideration solely the statistics that had a high correlation with salaries _(correlation > 0.6)_ as follows:
    ```python
