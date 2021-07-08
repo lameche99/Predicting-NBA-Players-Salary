@@ -41,7 +41,7 @@ For this project, we expect to have a machine learning algorithm that is able to
    <img src="./images/2019-20Correlation.png" width="300">
    <h3>2020-21</h3>
 
-   <img src="./images/Pearson_Correlation.png.png" width="300">
+   <img src="./images/Pearson_Correlation.png" width="300">
    <h3>2020-21</h3>
    
    We then took into consideration solely the statistics that had a high correlation with salaries _(correlation > 0.6)_ as follows:
@@ -61,8 +61,10 @@ For this project, we expect to have a machine learning algorithm that is able to
    Salary    1.00
    Name: Salary, dtype: float64
    ```
-   Based on the above data, we created training(80%) and test(20%) data set. Then we made linear regression Model and calculated predictions on the data. R squared value was 
-   used to interpret regression model fitting the observed data. With the r-squared of 59.69 ≈ 60% we can concluded that about 60% of the data fit the regression model.
+2. Linear Regression
+
+   Based on the above data, we created training(80%) and test(20%) data set. Then we made linear regression Model and calculated predictions on the data. R squared    value was 
+   used to interpret regression model fitting the observed data. With the r-squared of 59.69 ≈ 60% we can concluded that about 60% of the data fit the regression      model.
 
    ```python
    #Linear Regression to Predict Salary
