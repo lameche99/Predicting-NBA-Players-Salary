@@ -42,7 +42,6 @@ For this project, we expect to have a machine learning algorithm that is able to
    <h3>2020-21</h3>
 
    <img src="./images/Pearson_Correlation.png" width="300">
-   <h3>2020-21</h3>
    
    We then took into consideration solely the statistics that had a high correlation with salaries _(correlation > 0.6)_ as follows:
    ```python
@@ -74,7 +73,7 @@ For this project, we expect to have a machine learning algorithm that is able to
    r2_score(y_test, y_prediction)
    0.5969246358948748
    ```
-   To visualise the predicted results, we created a scatter plot for actual vs predicted values. The following plot shows that the    values have positive correlation: 
+   To visualise the predicted results, we created a scatter plot for actual vs predicted values. The following plot shows that the values have positive correlation: 
    
    ![Scatter Plot](./images/Scatter_Plot.PNG)
    
