@@ -73,12 +73,30 @@ For this project, we expect to have a machine learning algorithm that is able to
    r2_score(y_test, y_prediction)
    0.5969246358948748
    ```
+   #Mean Absolute Error
+   ```
+   mae = mean_absolute_error(y_test, y_pred)
+   ```
    To visualise the predicted results, we created a scatter plot for actual vs predicted values. The following plot shows that the values have positive correlation: 
    
    ![Scatter Plot](./images/Scatter_Plot.PNG)
    
    
 3. Random Forest Regression
+   ```python
+   #test(20%) and train(80%)
+   x = stats.drop("Salary", 1)
+   print(x)
+   y = stats["Salary"]
+   x_train,x_test, y_train, y_test = train_test_split(x, y, test_size = 0.2, random_state = 0)
+   regressor = RandomForestRegressor()
+   regressor.fit(x_train, y_train)
+   y_pred = regressor.predict(x_test)
+   ```
+   #Mean Absolute Error
+   ```
+   mae = mean_absolute_error(y_test, y_pred)
+   ```
 
    ![Scatter Plot](./images/RandomForest_ScatterPlot.PNG)
    
