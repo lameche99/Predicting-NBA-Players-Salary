@@ -77,6 +77,8 @@ For this project, we expect to have a machine learning algorithm that is able to
    ```
    mae = mean_absolute_error(y_test, y_pred)
    ```
+   => 4318229.546937237
+   
    To visualise the predicted results, we created a scatter plot for actual vs predicted values. The following plot shows that the values have positive correlation: 
    
    ![Scatter Plot](./images/Scatter_Plot.PNG)
@@ -97,6 +99,9 @@ For this project, we expect to have a machine learning algorithm that is able to
    ```
    mae = mean_absolute_error(y_test, y_pred)
    ```
+   
+   =>4501875.422087912
+
 
    ![Scatter Plot](./images/RandomForest_ScatterPlot.PNG)
    
