@@ -79,7 +79,7 @@ For this project, we expect to have a machine learning algorithm that is able to
    
    
 3. Random Forest Regression
-   <img src="./images/RandomForest_ScatterPlot.PNG" width="300">
+
    ![Scatter Plot](./images/RandomForest_ScatterPlot.PNG)
    
 # References
