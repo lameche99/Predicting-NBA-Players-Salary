@@ -73,7 +73,7 @@ For this project, we expect to have a machine learning algorithm that is able to
    r2_score(y_test, y_prediction)
    0.5969246358948748
    ```
-   #Mean Absolute Error
+   Mean Absolute Error:
    ```
    mae = mean_absolute_error(y_test, y_pred)
    ```
@@ -93,7 +93,7 @@ For this project, we expect to have a machine learning algorithm that is able to
    regressor.fit(x_train, y_train)
    y_pred = regressor.predict(x_test)
    ```
-   #Mean Absolute Error
+   Mean Absolute Error:
    ```
    mae = mean_absolute_error(y_test, y_pred)
    ```
