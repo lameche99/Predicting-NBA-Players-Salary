@@ -77,8 +77,8 @@ For this project, we expect to have a machine learning algorithm that is able to
    
    ![Scatter Plot](./images/Scatter_Plot.PNG)
    
-2. Random Forest Regression
-   ![Scatter Plot](./images/RandomForest_ScatterPlot.PNG)
+3. Random Forest Regression
+   ![RandomForest_ScatterPlot](./images/RandomForest_ScatterPlot.PNG)
    
 # References
 Papadaki, Ioanna, and Michail Tsagris. “Estimating NBA Players Salary Share According to Their Performance on Court: A Machine Learning Approach.” ArXiv.org, 31 Oct. 2020.
