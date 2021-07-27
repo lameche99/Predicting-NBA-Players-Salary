@@ -141,6 +141,14 @@ For this project, we expect to have a machine learning algorithm that is able to
    ![MPG](./images/MPG.PNG)
    ![TOV](./images/TOV.PNG)
    
+
+# Discussion and Conclusions
+
+The objective of this study was to provide a prediction of an NBA player's true salary based on his most relevant statistics in order to facilitate both players and franchises during potential contract negotiations. We decided to use three different models as predictors: Linear Regression, Random Forest and K-Nearest Neighbors. All three predictors show consistent linearity between actual and predicted values, with an approximate Mean Absolute Error of $4 million. 
+<br>
+The obtained results are promising however better accuracy could be achieved through the use of a wider range of statistics and their possible normalization as certain statistics prove to be more relevant than others in predicting players' salaries given their position, experience and impact not only on but also off the court.
+<br>
+In conclusion, with the time and data restrictions the model is fairly robust as the error in predicting salary is significant but not to the point where it makes the result incoherent. We decided to use only the last 5 years worth of data as salary inflation as risen dramatically compared to the seasons prior to 2016. Our suggestion would be to normalize the data more with respect to players positions as the relevant stats that factor into salary decisions are also heavily impacted by this.
 # References
 Papadaki, Ioanna, and Michail Tsagris. “Estimating NBA Players Salary Share According to Their Performance on Court: A Machine Learning Approach.” ArXiv.org, 31 Oct. 2020.
 
