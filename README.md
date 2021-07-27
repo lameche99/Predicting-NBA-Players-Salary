@@ -135,7 +135,7 @@ For this project, we expect to have a machine learning algorithm that is able to
    plt.show()
    ```
    ![PPG](./images/PPG.PNG)
-   #Here are the K-Nearest graphs for assists per game, minutes played per game, and turnovers per game:
+ Here are the K-Nearest graphs for assists per game, minutes played per game, and turnovers per game:
    
    ![APG](./images/APG.PNG)
    ![MPG](./images/MPG.PNG)
