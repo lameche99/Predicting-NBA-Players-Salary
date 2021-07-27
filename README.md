@@ -106,10 +106,12 @@ For this project, we expect to have a machine learning algorithm that is able to
    ![Scatter Plot](./images/RandomForest_ScatterPlot.PNG)
 4. K-Nearest Regresssion
    ```python
+   #K nearest neighbor regression to predict salary from points per game
+   from sklearn import neighbors
    n_neighbors = 3
-   X = x_train['MP']
-   T = np.linspace(0, max(X), 91)[np.newaxis,:]
+   T = np.linspace(0, 30, 91)[np.newaxis,:]
    T = T.reshape(-1,1)
+   X = x_train['PTS']
    X = X.to_numpy(X)
    X = X.reshape((-1,1))
    Y = y_train.to_numpy(y_train)
@@ -124,12 +126,15 @@ For this project, we expect to have a machine learning algorithm that is able to
        plt.plot(T, y_, color='navy', label='prediction')
        plt.axis('tight')
        plt.legend()
-       plt.title("KNeighborsRegressor (MP) (k = %i, weights = '%s')" % (n_neighbors,
+       plt.title("KNeighborsRegressor (PTS) (k = %i, weights = '%s')" % (n_neighbors,
                                                                    weights))
+       plt.xlabel("Points Per Game")
+       plt.ylabel("Salary (Million USD)")
 
    plt.tight_layout()
    plt.show()
    ```
+   ![PPG](./images/PPG.PNG)
    
 # References
 Papadaki, Ioanna, and Michail Tsagris. “Estimating NBA Players Salary Share According to Their Performance on Court: A Machine Learning Approach.” ArXiv.org, 31 Oct. 2020.
