@@ -104,6 +104,7 @@ For this project, we expect to have a machine learning algorithm that is able to
 
 
    ![Scatter Plot](./images/RandomForest_ScatterPlot.PNG)
+4. K-Nearest Regresssion
    
 # References
 Papadaki, Ioanna, and Michail Tsagris. “Estimating NBA Players Salary Share According to Their Performance on Court: A Machine Learning Approach.” ArXiv.org, 31 Oct. 2020.
