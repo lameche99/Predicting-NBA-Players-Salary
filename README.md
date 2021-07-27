@@ -135,6 +135,10 @@ For this project, we expect to have a machine learning algorithm that is able to
    plt.show()
    ```
    ![PPG](./images/PPG.PNG)
+   Here aer the K-Nearest graphs for assists per game, minutes played per game, and turnovers per game.
+   ![APG](./images/APG.PNG)
+   ![MPG](./images/MPG.PNG)
+   ![TOV](./images/TOV.PNG)
    
 # References
 Papadaki, Ioanna, and Michail Tsagris. “Estimating NBA Players Salary Share According to Their Performance on Court: A Machine Learning Approach.” ArXiv.org, 31 Oct. 2020.
