@@ -87,8 +87,10 @@ For this project, we expect to have a machine learning algorithm that is able to
    
    ![Dollar Values](./images/linear_regression_results.png)
    
+   Knowing that the relationship between a player's statistics and their salary is not perfectly linear we decided to implement two other predictors, Random Forest and K-Nearest Neighbors, below we can find the implementations and representative results.
    
 3. Random Forest Regression
+ 
    ```python
    #test(20%) and train(80%)
    x = stats.drop("Salary", 1)
@@ -108,6 +110,11 @@ For this project, we expect to have a machine learning algorithm that is able to
 
 
    ![Scatter Plot](./images/RandomForest_ScatterPlot.PNG)
+   
+   Here are some representative results from Random Forest Regression:
+   
+   ![Dollar Values](./images/random_forest_results.png)
+   
 4. K-Nearest Regresssion
    ```python
    #K nearest neighbor regression to predict salary from points per game
@@ -138,7 +145,12 @@ For this project, we expect to have a machine learning algorithm that is able to
    plt.tight_layout()
    plt.show()
    ```
-   ![PPG](./images/PPG.PNG)  
+   ![PPG](./images/PPG.PNG)
+   
+   Below we can find some predicted values through K-Nearest Neighbors with respect to players' Points per Game:
+   
+   ![Dollar Values](./images/knn_results.png)
+   
  Here are the K-Nearest graphs for assists per game, minutes played per game, and turnovers per game:
    
    ![APG](./images/APG.PNG)
