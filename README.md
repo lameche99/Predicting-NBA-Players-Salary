@@ -85,7 +85,7 @@ For this project, we expect to have a machine learning algorithm that is able to
    
    The table below shows the actual versus predicted dollar values of a sample of players through Linear Regression:
    
-   ![Dollar Values[(./images/linear_regression_results.png)
+   ![Dollar Values](./images/linear_regression_results.png)
    
    
 3. Random Forest Regression
