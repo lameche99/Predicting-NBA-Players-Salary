@@ -144,7 +144,7 @@ Similar to Linear regression model, we used 20% of the data for test and 80% for
    plt.tight_layout()
    plt.show()
    ```
-   ![PPG](./images/PPG.PNG)
+   ![PPG](./images/NPPG.PNG)
    
    Below we can find some predicted values through K-Nearest Neighbors with respect to players' Points per Game:
    
@@ -152,9 +152,9 @@ Similar to Linear regression model, we used 20% of the data for test and 80% for
    
  Here are the K-Nearest graphs for assists per game, minutes played per game, and turnovers per game:
    
-   ![APG](./images/APG.PNG)
-   ![MPG](./images/MPG.PNG)
-   ![TOV](./images/TOV.PNG)
+   ![APG](./images/NAPG.PNG)
+   ![MPG](./images/NMPG.PNG)
+   ![TOV](./images/NTOV.PNG)
    
 
 ## Discussion and Conclusions
