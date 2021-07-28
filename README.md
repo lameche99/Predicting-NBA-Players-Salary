@@ -58,8 +58,7 @@ For this project, we expect to have a machine learning algorithm that is able to
    ```
 2. Linear Regression
 
-   Based on the above data, we created training(80%) and test(20%) data set. Then we made linear regression Model and calculated predictions on the data. R squared    value was 
-   used to interpret regression model fitting the observed data. With the r-squared of 59.69 we can concluded that about 59.69% of the data fit the regression      model.
+After preprocessing the data and dropping features that are not highly correlated to the player's salary, we implemented linear regression using scikit learn to predict the player's salary. We split our data into training and test sets. 20% was used for testing and the remaining 80% was for training. Then we predicted the salary with regression. R squared value was used to interpret regression model fitting the observed data. With the r-squared of value is 59.69% and the mean absolute error is 4318229.55
 
    ```python
    #Linear Regression to Predict Salary
@@ -86,7 +85,9 @@ For this project, we expect to have a machine learning algorithm that is able to
    Knowing that the relationship between a player's statistics and their salary is not perfectly linear we decided to implement two other predictors, Random Forest and K-Nearest Neighbors, below we can find the implementations and representative results.
    
 3. Random Forest Regression
- 
+
+Similar to Linear regression model, we used 20% of the data for test and 80% for training set in the Random FOrest Regression. The R-squared value is 0.567 and the mean absolute error is 4501875.42
+
    ```python
    #test(20%) and train(80%)
    x = stats.drop("Salary", 1)
