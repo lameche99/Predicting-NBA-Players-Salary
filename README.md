@@ -152,7 +152,7 @@ Similar to Linear regression model, we used 20% of the data for test and 80% for
    
  Here are the K-Nearest graphs for assists per game, minutes played per game, and turnovers per game:
    
-   ![APG](./images/NAPG.PNG)
+   ![APG](./images/NAST.PNG)
    ![MPG](./images/NMPG.PNG)
    ![TOV](./images/NTOV.PNG)
    
