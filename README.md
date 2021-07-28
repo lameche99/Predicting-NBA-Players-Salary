@@ -59,7 +59,7 @@ For this project, we expect to have a machine learning algorithm that is able to
 2. Linear Regression
 
    Based on the above data, we created training(80%) and test(20%) data set. Then we made linear regression Model and calculated predictions on the data. R squared    value was 
-   used to interpret regression model fitting the observed data. With the r-squared of 59.69 ≈ 60% we can concluded that about 60% of the data fit the regression      model.
+   used to interpret regression model fitting the observed data. With the r-squared of 59.69 we can concluded that about 59.69% of the data fit the regression      model.
 
    ```python
    #Linear Regression to Predict Salary
@@ -96,6 +96,8 @@ For this project, we expect to have a machine learning algorithm that is able to
    regressor = RandomForestRegressor()
    regressor.fit(x_train, y_train)
    y_pred = regressor.predict(x_test)
+   r2_score(y_test, y_pred)
+   0.566534606214592
    ```
    Mean Absolute Error:
    ```
